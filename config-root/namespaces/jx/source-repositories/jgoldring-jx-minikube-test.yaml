@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jgoldring
+    provider: github
+    repository: jx-minikube-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jgoldring-jx-minikube-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jgoldring/jx-minikube-test.git
+  org: jgoldring
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-minikube-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jgoldring/jx-minikube-test
