@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
+releases:
+- chart: dev/jx-minikube-test
+  version: 0.0.1
+  name: jx-minikube-test
+templates: {}
+renderedvalues: {}
